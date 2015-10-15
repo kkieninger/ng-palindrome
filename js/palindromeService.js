@@ -1,0 +1,5 @@
+
+app.factory('ngPalindromeApp', function(){
+
+
+});

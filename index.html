@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Knights Who Require Palindromes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/ni-icon.ico">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body ng-app="ngPalindromeApp">
+	<div id="wrapper">
+		<header>
+			<h2>The Knights Who Require Palindromes</h2>
+		</header>
+		<img src="img/knight-head.jpg" class="header-image img-responsive" alt="Knights Who Say 'Ni' Header">
+		<div ng-controller="MainController">
+			<p>We are the Knights Who Say "Ni", and we demand... a sacrifice!</p>
+			<p>We shall say "Ni" to you... if you do not appease us.</p>
+			<p>We want...</p>
+			<h3>A PALINDROME!!!!</h3>
+
+			<div class="result-box">
+				<p>You must return here with a palindrome... or else you will never pass through this internet...  alive.</p>
+		
+				<input type="text" name="" value="" placeholder="Bring us, a palindrome!" ng-model="string" class="input">
+				<div class="function-text">{{isPalindrome(string)}}</div>
+				<h3 class="result-text">{{result}}</h2>
+			</div>
+			
+		</div>
+		<footer>
+			<p>Sir Kieninger | 2015</p>
+			<img src="img/ni-icon.jpg" class="footer-icon" alt="">
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
